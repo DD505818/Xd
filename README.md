@@ -15,3 +15,8 @@ This is a comprehensive trading system designed for high performance in volatile
 ## Usage
 - Backtesting: `python scripts/backtest.py`
 - Live Trading: `python scripts/main.py --mode live`
+
+## Deployment
+1. Run the deployment script: `./deploy.sh`
+2. The script will set up a virtual environment, install dependencies, and configure environment variables.
+3. After running the script, you can start the trading system using the configured environment variables.
