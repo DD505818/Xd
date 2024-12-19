@@ -1,0 +1,14 @@
+{
+    "leverage": {
+        "low_volatility": 5,
+        "high_volatility": 2
+    },
+    "rebalance_threshold": 0.10,
+    "stop_loss": 0.20,
+    "max_drawdown": 0.15,
+    "target_allocations": {
+        "High-Risk": 0.5,
+        "Established": 0.3,
+        "Stablecoins": 0.2
+    }
+}
