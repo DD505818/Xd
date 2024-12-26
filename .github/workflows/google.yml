@@ -39,14 +39,14 @@ on:
       - '"main"'
 
 env:
-  PROJECT_ID: 'dd505818' # TODO: update to your Google Cloud project ID
-  GAR_LOCATION: 'us-central1' # TODO: update to your region
-  GKE_CLUSTER: 'xd-cluster' # TODO: update to your cluster name
-  GKE_ZONE: 'us-central1-c' # TODO: update to your cluster zone
-  DEPLOYMENT_NAME: 'xd-deployment' # TODO: update to your deployment name
-  REPOSITORY: 'xd-repo' # TODO: update to your Artifact Registry docker repository name
-  IMAGE: 'xd-image'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/xd-pool/providers/xd-provider' # TODO: update to your workload identity provider
+  PROJECT_ID: 'your-google-cloud-project-id'
+  GAR_LOCATION: 'your-region'
+  GKE_CLUSTER: 'your-cluster-name'
+  GKE_ZONE: 'your-cluster-zone'
+  DEPLOYMENT_NAME: 'your-deployment-name'
+  REPOSITORY: 'your-artifact-registry-docker-repository-name'
+  IMAGE: 'your-image-name'
+  WORKLOAD_IDENTITY_PROVIDER: 'your-workload-identity-provider'
 
 jobs:
   setup-build-publish-deploy:
