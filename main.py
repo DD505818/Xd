@@ -15,3 +15,6 @@ def main():
     
     api = initialize_api(binance_api_key, binance_api_secret)
     execute_strategy(api)
+
+if __name__ == "__main__":
+    main()
