@@ -93,3 +93,27 @@ jobs:
         run: |2-
 
           echo ${{ steps.deploy.outputs.url }}
+
+      # Deployment steps for alert system
+      - name: 'Deploy Alert System'
+        run: |-
+          echo "Deploying alert system..."
+          python alert_system.py
+
+      # Deployment steps for confirmation signals
+      - name: 'Deploy Confirmation Signals'
+        run: |-
+          echo "Deploying confirmation signals..."
+          python confirmation_signals.py
+
+      # Deployment steps for risk management
+      - name: 'Deploy Risk Management'
+        run: |-
+          echo "Deploying risk management..."
+          python risk_management.py
+
+      # Deployment steps for trade execution
+      - name: 'Deploy Trade Execution'
+        run: |-
+          echo "Deploying trade execution..."
+          python trade_execution.py
