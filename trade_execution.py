@@ -2,6 +2,7 @@
 
 import smtplib
 import yfinance as yf
+import os
 
 def execute_trade(ticker, action):
     """Executes a trade based on the specified action."""
