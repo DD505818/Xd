@@ -35,10 +35,10 @@ on:
       - '"main"'
 
 env:
-  PROJECT_ID: 'dd505818'
+  PROJECT_ID: 'my-google-cloud-project-id'
   REGION: 'us-central1'
-  SERVICE: 'xd-service'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/xd-pool/providers/xd-provider'
+  SERVICE: 'my-cloud-run-service'
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
 
 jobs:
   deploy:
