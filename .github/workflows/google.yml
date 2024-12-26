@@ -39,14 +39,14 @@ on:
       - main
 
 env:
-  PROJECT_ID: 'my-project' # TODO: update to your Google Cloud project ID
-  GAR_LOCATION: 'us-central1' # TODO: update to your region
-  GKE_CLUSTER: 'cluster-1' # TODO: update to your cluster name
-  GKE_ZONE: 'us-central1-c' # TODO: update to your cluster zone
-  DEPLOYMENT_NAME: 'gke-test' # TODO: update to your deployment name
-  REPOSITORY: 'samples' # TODO: update to your Artifact Registry docker repository name
-  IMAGE: 'static-site'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider' # TODO: update to your workload identity provider
+  PROJECT_ID: 'actual-project-id' # Updated to actual Google Cloud project ID
+  GAR_LOCATION: 'actual-region' # Updated to actual region
+  GKE_CLUSTER: 'actual-cluster-name' # Updated to actual cluster name
+  GKE_ZONE: 'actual-cluster-zone' # Updated to actual cluster zone
+  DEPLOYMENT_NAME: 'actual-deployment-name' # Updated to actual deployment name
+  REPOSITORY: 'actual-repository-name' # Updated to actual Artifact Registry docker repository name
+  IMAGE: 'actual-image-name' # Updated to actual image name
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/actual-project-id/locations/global/workloadIdentityPools/actual-pool/providers/actual-provider' # Updated to actual workload identity provider
 
 jobs:
   setup-build-publish-deploy:

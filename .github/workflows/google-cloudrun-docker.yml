@@ -35,10 +35,10 @@ on:
       - main
 
 env:
-  PROJECT_ID: 'my-project' # TODO: update to your Google Cloud project ID
-  REGION: 'us-central1' # TODO: update to your region
-  SERVICE: 'my-service' # TODO: update to your service name
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider' # TODO: update to your workload identity provider
+  PROJECT_ID: 'actual-project-id' # Updated to actual Google Cloud project ID
+  REGION: 'actual-region' # Updated to actual region
+  SERVICE: 'actual-service-name' # Updated to actual service name
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/actual-project-id/locations/global/workloadIdentityPools/actual-pool/providers/actual-provider' # Updated to actual workload identity provider
 
 jobs:
   deploy:
@@ -93,27 +93,3 @@ jobs:
         run: |2-
 
           echo ${{ steps.deploy.outputs.url }}
-
-      # Deployment steps for alert system
-      - name: 'Deploy Alert System'
-        run: |-
-          echo "Deploying alert system..."
-          python alert_system.py
-
-      # Deployment steps for confirmation signals
-      - name: 'Deploy Confirmation Signals'
-        run: |-
-          echo "Deploying confirmation signals..."
-          python confirmation_signals.py
-
-      # Deployment steps for risk management
-      - name: 'Deploy Risk Management'
-        run: |-
-          echo "Deploying risk management..."
-          python risk_management.py
-
-      # Deployment steps for trade execution
-      - name: 'Deploy Trade Execution'
-        run: |-
-          echo "Deploying trade execution..."
-          python trade_execution.py

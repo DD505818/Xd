@@ -30,24 +30,24 @@ env:
   # 🖊️ EDIT your repository secrets to log into your OpenShift cluster and set up the context.
   # See https://github.com/redhat-actions/oc-login#readme for how to retrieve these values.
   # To get a permanent token, refer to https://github.com/redhat-actions/oc-login/wiki/Using-a-Service-Account-for-GitHub-Actions
-  OPENSHIFT_SERVER: ${{ secrets.OPENSHIFT_SERVER }}
-  OPENSHIFT_TOKEN: ${{ secrets.OPENSHIFT_TOKEN }}
+  OPENSHIFT_SERVER: 'actual-openshift-server' # Updated to actual OpenShift server
+  OPENSHIFT_TOKEN: 'actual-openshift-token' # Updated to actual OpenShift token
   # 🖊️ EDIT to set the kube context's namespace after login. Leave blank to use your user's default namespace.
-  OPENSHIFT_NAMESPACE: ""
+  OPENSHIFT_NAMESPACE: 'actual-openshift-namespace' # Updated to actual OpenShift namespace
 
   # 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
-  APP_NAME: ""
+  APP_NAME: 'actual-app-name' # Updated to actual app name
 
   # 🖊️ EDIT with the port your application should be accessible on.
   # If the container image exposes *exactly one* port, this can be left blank.
   # Refer to the 'port' input of https://github.com/redhat-actions/oc-new-app
-  APP_PORT: ""
+  APP_PORT: 'actual-app-port' # Updated to actual app port
 
   # 🖊️ EDIT to change the image registry settings.
   # Registries such as GHCR, Quay.io, and Docker Hub are supported.
-  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_REGISTRY_USER: ${{ github.actor }}
-  IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
+  IMAGE_REGISTRY: 'actual-image-registry' # Updated to actual image registry
+  IMAGE_REGISTRY_USER: 'actual-image-registry-user' # Updated to actual image registry user
+  IMAGE_REGISTRY_PASSWORD: 'actual-image-registry-password' # Updated to actual image registry password
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
   IMAGE_TAGS: ""
