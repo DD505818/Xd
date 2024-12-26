@@ -39,14 +39,14 @@ on:
       - '"main"'
 
 env:
-  PROJECT_ID: 'dd505818'
+  PROJECT_ID: 'my-google-cloud-project-id'
   GAR_LOCATION: 'us-central1'
-  GKE_CLUSTER: 'xd-cluster'
+  GKE_CLUSTER: 'my-gke-cluster'
   GKE_ZONE: 'us-central1-a'
-  DEPLOYMENT_NAME: 'xd-deployment'
-  REPOSITORY: 'xd-repo'
-  IMAGE: 'xd-image'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/xd-pool/providers/xd-provider'
+  DEPLOYMENT_NAME: 'my-deployment'
+  REPOSITORY: 'my-repo'
+  IMAGE: 'my-image'
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
 
 jobs:
   setup-build-publish-deploy:
