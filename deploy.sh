@@ -20,4 +20,20 @@ export BINANCE_API_KEY=$(echo $API_KEYS | awk 'NR==1')
 export BINANCE_API_SECRET=$(echo $API_KEYS | awk 'NR==2')
 export SLACK_WEBHOOK_URL=$(echo $API_KEYS | awk 'NR==3')
 
+# Deployment steps for alert system
+echo "Deploying alert system..."
+python alert_system.py
+
+# Deployment steps for confirmation signals
+echo "Deploying confirmation signals..."
+python confirmation_signals.py
+
+# Deployment steps for risk management
+echo "Deploying risk management..."
+python risk_management.py
+
+# Deployment steps for trade execution
+echo "Deploying trade execution..."
+python trade_execution.py
+
 echo "Deployment completed successfully."
